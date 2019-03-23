@@ -1,0 +1,7 @@
+.form-text {
+    display: none;
+}
+
+.borderless td, .borderless th {
+    border: none;
+}

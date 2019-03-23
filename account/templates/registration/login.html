@@ -1,0 +1,17 @@
+{% extends "base_centered.html" %}
+
+{% load bootstrap4 %}
+
+{% block content %}
+
+    <h5 class="card-title text-center">ログイン</h5>
+    <form action="{% url 'login' %}" method="POST">
+        {% bootstrap_form form %}
+        <button type="submit" class="btn btn-primary btn-block">ログイン</button>
+        <input type="hidden" name="next" value="{{ next }}"/>
+        {% csrf_token %}
+    </form>
+    <a href="{% url 'password_reset' %}">パスワードをお忘れですか?</a>
+
+
+{% endblock %}

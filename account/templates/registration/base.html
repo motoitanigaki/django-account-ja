@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% load i18n %}
+
+{% block body %}
+    <div class="row">
+        <div class="col-md-3">
+            {% include "registration/subnav.html" %}
+        </div>
+        <div class="col-md-9">
+            {% block content %}
+            {% endblock %}
+        </div>
+    </div>
+{% endblock %}

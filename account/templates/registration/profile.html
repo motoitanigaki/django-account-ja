@@ -1,0 +1,18 @@
+{% extends "registration/base.html" %}
+
+{% block content %}
+
+    <table class="table borderless">
+        <tbody>
+        <tr>
+            <th scope="row">E-mail</th>
+            <td>{{ user.email }}</td>
+        </tr>
+        <tr>
+            <th scope="row">入会日</th>
+            <td>{{ user.date_joined }}</td>
+        </tr>
+        </tbody>
+    </table>
+
+{% endblock %}
